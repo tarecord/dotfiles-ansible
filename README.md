@@ -1,6 +1,6 @@
 # dotfiles
 
-[sloria's dotfiles](https://github.com/sloria/dotfiles-old), rewritten as Ansible roles. Sets up a full local development environment with a **single command.**
+Tanner's dotfiles written as Ansible roles. Sets up a full local development environment with a **single command.** (based on [sloria's dotfiles](https://github.com/sloria/dotfiles-old))
 
 Fully supports macOS. Red Hat and Debian support is good but not as complete.
 
@@ -24,18 +24,18 @@ Fully supports macOS. Red Hat and Debian support is good but not as complete.
 
 ## install
 
-- [Fork](https://github.com/sloria/dotfiles/fork) this repo.
+- [Fork](https://github.com/tarecord/dotfiles-ansible/fork) this repo.
 - Clone your fork.
 
 ```bash
 # Replace git url with your fork
 # NOTE: It is important that you clone to ~/dotfiles
-git clone https://github.com/YOU/dotfiles.git ~/dotfiles
+git clone https://github.com/YOU/dotfiles-ansible.git ~/dotfiles
 cd ~/dotfiles
 ```
 
 - Update the following variables in `group_vars/local` (at a minimum)
-  - `full_name`: Your name, which will be attached to commit messages, e.g. "Steven Loria"
+  - `full_name`: Your name, which will be attached to commit messages, e.g. "Tanner Record"
   - `git_user`: Your Github username.
   - `git_email`: Your git email address.
 - Optional, but recommended: Update `group_vars/local` with the programs you want installed by [homebrew][], [homebrew-cask][], and npm.
@@ -90,7 +90,7 @@ dot-update git python
 To keep your fork up to date with the `sloria` fork:
 
 ```
-git remote add sloria https://github.com/sloria/dotfiles.git
+git remote add tarecord https://github.com/tarecord/dotfiles-ansible.git
 git pull sloria master
 ```
 
