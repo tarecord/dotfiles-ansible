@@ -24,10 +24,12 @@ echo "  › Show path bar"
 defaults write com.apple.finder ShowPathbar -bool true
 
 echo "  › Autohide Dock"
-defaults write com.apple.dock autohide -bool true && killall Dock
+defaults write com.apple.dock autohide -bool true
 
-echo "  › Don't use native full-screen (separate Space) for MacVim"
-defaults write org.vim.MacVim MMNativeFullScreen 0
+echo "  › Customize Dock Icon Size"
+defaults write com.apple.dock tilesize -int 36
+defaults write com.apple.dock magnification -bool true
+defaults write com.apple.dock largesize -int 50
 
-echo "  › Enable key repeat in VSCodeVim"
-defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false 
+echo "  › Disable Recents in Dock"
+defaults write com.apple.dock show-recents -bool false && killall Dock
