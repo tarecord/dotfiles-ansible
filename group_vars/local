@@ -41,6 +41,7 @@ mac_cask_packages:
   # Virtualization
   - docker
   - orbstack
+  - local
   # chat
   - slack
   # Video conferencing
