@@ -2,6 +2,9 @@
   script: set-defaults.sh
   changed_when: false
 
+- name: Ensure Rosetta 2 is installed
+  shell: /usr/sbin/softwareupdate --install-rosetta --agree-to-license
+
 - name: Ensure iCloud Drive is linked to ~/iCloud
   file:
     src: "{{dotfiles_user_home}}/Library/Mobile Documents/com~apple~CloudDocs"
