@@ -1,3 +1,0 @@
-- name: Install eza with Homebrew
-  homebrew: name=eza state=present
-  when: ansible_os_family == "Darwin"
