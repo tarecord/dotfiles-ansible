@@ -25,7 +25,7 @@ mac_homebrew_packages:
   - curl
   - wget
   - htop
-  - imagemagic  # for resizing images
+  - imagemagick  # for resizing images
   - svn  # needed for installing font-cousine
 
 # Mac Apps to be installed with homebrew-cask
