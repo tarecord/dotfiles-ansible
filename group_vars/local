@@ -34,9 +34,11 @@ mac_cask_packages:
   - 1password
   # Editor
   - phpstorm
+  # File Transfer
+  - transmit
   # Browser
   - arc
-  - chrome
+  - google-chrome
   - firefox
   # Virtualization
   - docker
@@ -78,9 +80,8 @@ mac_cask_packages:
 # Use App IDs found with `mas search <name>`
 mac_mas_packages:
   # NOTE: the IDs can be found with `mas search <app name>`
+  - {"id": 1176895641, "name": "Spark"}
   - {"id": 1055511498, "name": "Day One"}
-  - {"id": 2144121543, "name": "Spark"}
   - {"id": 1303222628, "name": "Paprika Recipe Manager 3"}
   - {"id": 441258766, "name": "Magnet"}
-  - {"id": 1436522307, "name": "Transmit"}
   - {"id": 904280696, "name": "Things"}

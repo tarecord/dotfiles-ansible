@@ -18,9 +18,6 @@
     creates: "{{dotfiles_user_home}}/.zshrc.bak"
   when: zshrc_stat.stat.exists
 
-- import_tasks: prezto.yml
-  when: zsh_prezto
-
 - name: Copy minimal zshrc
   copy: src=zshrc_minimal dest={{dotfiles_user_home}}/.zshrc
   when: not zsh_prezto
