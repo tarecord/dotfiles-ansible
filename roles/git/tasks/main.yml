@@ -6,6 +6,13 @@
 - import_tasks: redhat.yml
   when: ansible_os_family == "RedHat"
 
+- name: Link global git commit template file
+  file:
+    src: "{{ dotfiles_home }}/roles/git/files/git_commit_template_global.link"
+    dest: "{{ dotfiles_user_home }}/.git_commit_template_global"
+    state: link
+    force: yes
+
 - name: Link global gitignore file
   file:
     src: "{{ dotfiles_home }}/roles/git/files/gitignore_global.link"

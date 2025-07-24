@@ -32,7 +32,8 @@
         required = true
 [github]
         user = {{ git_user }}
-{% if git_signing_key %}
 [commit]
+        template = ~/.git_commit_template_global
+        {% if git_signing_key %}
         gpgsign = true
-{% endif %}
+        {% endif %}
