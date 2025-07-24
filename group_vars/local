@@ -33,7 +33,7 @@ mac_cask_packages:
   # Password manager
   - 1password
   # Editor
-  - phpstorm
+  - cursor
   # File Transfer
   - transmit
   # Browser
@@ -75,6 +75,8 @@ mac_cask_packages:
   - poedit
   # Terminal
   - hyper
+  # AI Tools
+  - claude
 
 # Mac-App-Store-only apps to be installed with mas
 # Use App IDs found with `mas search <name>`
