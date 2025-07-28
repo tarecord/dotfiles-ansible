@@ -34,6 +34,10 @@
         user = {{ git_user }}
 [commit]
         template = ~/.git_commit_template_global
-        {% if git_signing_key %}
+{% if git_signing_key %}
         gpgsign = true
-        {% endif %}
+{% endif %}
+[gpg]
+	format = ssh
+[gpg "ssh"]
+	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
